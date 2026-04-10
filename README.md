@@ -1,6 +1,7 @@
 ## Introduction
 **This repository contains source code for DF-CLIP: Adapting Visual-Language Models for Generalizable Deepfake Detection Using Multi-Modal Prompt Tuning.** 
 
+Generalizable Deepfake Detection (GDD) aims to detect forged images across different data distributions. Recently, pre-trained Visual-Language Models (VLMs), such as CLIP, have shown unprecedented generalization capabilities in diverse downstream visual tasks, making it a competitive potential choice for GDD tasks. However, due to the lack of deepfake-specific knowledge and cross-modal interactions, VLMs exhibit limited generalization performance on GDD tasks. To address these issues, we propose a novel multi-modal prompt tuning method, namely DF-CLIP, for GDD tasks. Specifically, DF-CLIP refines the representation space by learnable visual and text prompts, adapting VLMs to deepfake detection tasks. To build the interactions between modalities, we integrate global image features into text prompts, enhancing the model's contextual learning ability and multi-modal synergy. In addition, to further promote cross-modal mutual understanding and improve the generalization performance, we propose a context-enhanced embedding module to fuse local visual features and text embeddings to generate contextual text embeddings, improving the model's forgery semantic perception capabilities. We conduct experiments on multiple GDD benchmarks. Extensive experimental results demonstrate that our proposed method outperforms existing state-of-the-art methods by a large margin.
 
 
 ## Environments
@@ -15,7 +16,7 @@ conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cud
 
 
 #### Datasets
-1、Download and prepare the dataset: [F+++](https://github.com/ondyari/FaceForensics), [FFIW](https://github.com/tfzhou/FFIW), [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics), [DFDC-P](https://ai.facebook.com/datasets/dfdc/).
+1、Download and prepare the dataset: [F+++](https://github.com/ondyari/FaceForensics), [FFIW](https://github.com/tfzhou/FFIW), [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics), and [DFDC-P](https://ai.facebook.com/datasets/dfdc/).
 
 2、Use the code under the ./preprocessing file to extract and align faces. Put the processed data under the folder './datasets'.
 
