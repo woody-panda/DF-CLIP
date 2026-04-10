@@ -16,7 +16,7 @@ conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cud
 
 
 #### Datasets
-1、Download and prepare the dataset: [F+++](https://github.com/ondyari/FaceForensics), [FFIW](https://github.com/tfzhou/FFIW), [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics), and [DFDC-P](https://ai.facebook.com/datasets/dfdc/).
+1、Download and prepare the dataset: [FF+++](https://github.com/ondyari/FaceForensics), [FFIW](https://github.com/tfzhou/FFIW), [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics), and [DFDC-P](https://ai.facebook.com/datasets/dfdc/).
 
 2、Use the code under the ./preprocessing file to extract and align faces. Put the processed data under the folder './datasets'.
 
